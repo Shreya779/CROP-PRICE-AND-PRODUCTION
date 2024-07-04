@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>UpConstruction Bootstrap Template - Service Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: UpConstruction
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f4f4f4;
+      margin-top: 300px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      width: 90%;
+      max-width: 1800px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .left-side,
+    .right-side {
+      width: 50%;
+      padding: 20px;
+    }
+
+    .left-side {
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .left-side img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .left-side h3 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .left-side p {
+      font-size: 16px;
+      color: #666;
+      text-align: center;
+    }
+
+    .right-side {
+      background-color: #2b9348;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .form-container {
+      margin-top: 20px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .form-group select {
+      appearance: none;
+    }
+
+    .form-group input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    .form-group input[type="number"]::-webkit-outer-spin-button,
+    .form-group input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #45a049;
+    }
+
+    .predicted-yield {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 20px;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left-side">
+            <img src="https://indiaforensic.com/certifications/wp-content/uploads/2017/01/agriculture.jpg" alt="agriculture"/>
+            <h3>Yield Prediction</h3>
+            <p>Crop yield, a fundamental metric in agriculture, represents the quantity of crop produced per unit area. It is a critical indicator of agricultural productivity and efficiency, directly influencing food supply, economic stability, and farmers' livelihoods.</p>
+            <p>Achieving optimal crop yields involves a complex interplay of various factors, including genetic potential of the crop, environmental conditions, agronomic practices, and resource availability.</p>
+        </div>
+        <div class="right-side">
+            <div class="form-container">
+                <form id="prediction-form">
+                    <div class="form-group">
+                        <label for="District">District:</label>
+                        <select name="district" id="District" class="form-select" required>
+                            <option value="">Select District</option>
+
+                            <option value="Ajmer">Ajmer</option>
+                            <option value="Alwar">Alwar</option>
+                            <option value="Bhilwara">Bhilwara</option>
+                            <option value="Hanumangarh">Hanumangarh</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Jodhpur">Jodhpur</option>
+                            <option value="Kota">Kota</option>
+                            <option value="Nagaur">Nagaur</option>
+                            <option value="Sri Ganganagar">Sri Ganganagar</option>
+                            <option value="Udaipur">Udaipur</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Crop">Crop:</label>
+                        <select name="crop" id="Crop" class="form-select" required>
+                            <option value="">Select Crop</option>
+
+                            <option value="Bajra">Bajra</option>
+                            <option value="Chilli">Chilli</option>
+                            <option value="Citrus">Citrus</option>
+                            <option value="Coriander">Coriander</option>
+                            <option value="Cotton">Cotton</option>
+                            <option value="Cumin">Cumin</option>
+                            <option value="Fennel">Fennel</option>
+                            <option value="Fenugreek">Fenugreek</option>
+                            <option value="Garlic">Garlic</option>
+                            <option value="Gram">Gram</option>
+                            <option value="Guava">Guava</option>
+                            <option value="maize">Maize</option>
+                            <option value="Mango">Mango</option>
+                            <option value="Mustard">Mustard</option>
+                            <option value="Oilseeds">Oilseeds</option>
+                            <option value="Onion">Onion</option>
+                            <option value="Opium">Opium</option>
+                            <option value="Pomegranate">Pomegranate</option>
+                            <option value="Pulses">Pulses</option>
+                            <option value="Sugarcane">Sugarcane</option>
+                            <option value="Tomato">Tomato</option>
+                            <option value="Wheat">Wheat</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Season">Season:</label>
+                        <select name="season" id="Season" class="form-select" required>
+                            <option value="">Select Season</option>
+
+                            <option value="Kharif">Kharif</option>
+                            <option value="Rabi">Rabi</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Area">Area (hectares):</label>
+                        <input type="number" id="Area" name="Area">
+                    </div>
+                    <div class="form-group">
+                        <label for="Soil Type">Soil Type:</label>
+                        <select name="soil_type" id="Soil Type" class="form-select" required>
+                            <option value="">Select Soil Type</option>
+
+                            <option value="Alkaline">Alkaline</option>
+                            <option value="Black lava soil">Black lava soil</option>
+                            <option value="Chalky(Calcareous)">Chalky (Calcareous)</option>
+                            <option value="Clay">Clay</option>
+                            <option value="Loamy">Loamy</option>
+                            <option value="Nitrogeneous">Nitrogeneous</option>
+                            <option value="Saline">Saline</option>
+                            <option value="Sandy">Sandy</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pH Level">pH Level:</label>
+                        <input type="number" id="pH Level" name="pH Level">
+                    </div>
+                    <div class="form-group">
+                        <label for="Organic Matter">Organic Matter (%):</label>
+                        <input type="number" id="Organic Matter" name="Organic Matter">
+                    </div>
+                    <div class="form-group">
+                        <label for="Nitrogen Content">Nitrogen Content (kg/ha):</label>
+                        <input type="number" id="Nitrogen Content" name="Nitrogen Content">
+                    </div>
+                    <div class="form-group">
+                        <label for="Phosphorus Content">Phosphorus Content (kg/ha):</label>
+                        <input type="number" id="Phosphorus Content" name="Phosphorus Content">
+                    </div>
+                    <div class="form-group">
+                        <label for="Potassium Content">Potassium Content (kg/ha):</label>
+                        <input type="number" id="Potassium Content" name="Potassium Content">
+                    </div>
+                    <div class="form-group">
+                        <label for="Irrigation Method">Irrigation Method:</label>
+                        <select id="Irrigation Method" name="Irrigation Method">
+                            <option value="Drip">Drip</option>
+                            <option value="Sprinkler">Sprinkler</option>
+                            <option value="Canal">Canal</option>
+                            <option value="Tube Well">Tube Well</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Water Availability">Water Availability (liters/hectare):</label>
+                        <input type="number" id="Water Availability" name="Water Availability">
+                    </div>
+                    <div class="form-group">
+                        <button type="button" onclick="predict()">Predict</button>
+                    </div>
+                    <div class="predicted-yield">
+                        <h2>Predicted Yield: <span id="predicted-yield"></span></h2>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+  <script>
+    function predict() {
+        const data = {
+            "District": document.getElementById("District").value,
+            "Crop": document.getElementById("Crop").value,
+            "Season": document.getElementById("Season").value,
+            "Area (hectares)": parseFloat(document.getElementById("Area").value),
+            "Soil Type": document.getElementById("Soil Type").value,
+            "pH Level": parseFloat(document.getElementById("pH Level").value),
+            "Organic Matter (%)": parseFloat(document.getElementById("Organic Matter").value),
+            "Nitrogen Content (kg/ha)": parseFloat(document.getElementById("Nitrogen Content").value),
+            "Phosphorus Content (kg/ha)": parseFloat(document.getElementById("Phosphorus Content").value),
+            "Potassium Content (kg/ha)": parseFloat(document.getElementById("Potassium Content").value),
+            "Irrigation Method": document.getElementById("Irrigation Method").value,
+            "Water Availability (liters/hectare)": parseFloat(document.getElementById("Water Availability").value)
+        };
+
+        fetch('/predict', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("predicted-yield").innerText = data.predicted_yield.toFixed(4);
+        });
+    }
+</script>
+
+</body>
+
+</html>

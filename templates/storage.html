@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>UpConstruction Bootstrap Template - Service Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: UpConstruction
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .left-side,
+        .right-side {
+            width: 50%;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .left-side {
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left-side img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .left-side h3 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .left-side p {
+            font-size: 16px;
+            color: #666;
+            text-align: center;
+        }
+
+        .right-side {
+            background-color: #2b9348;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-container {
+            margin-top: 0px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+        .form-group{
+            margin-top: 20px;
+        }
+        .form-containerr {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="date"]:focus,
+.form-group input[type="number"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #047b02;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #029911;
+}
+
+#predictions {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#predictions h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#predictions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#predictions li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#predictions li span {
+    font-weight: bold;
+    color: #333;
+}
+
+#predictions p {
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#predictions h2 {
+    font-weight: bold;
+}
+
+#predictions .max-price {
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#predictions .max-profit-message {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="left-side">
+            <img src="https://imageio.forbes.com/specials-images/imageserve/658f074cd18ab2cbde024703/Smart-farming-holding-young-plant--Smart-farming-and-precision-agriculture-4-0-/960x0.jpg?format=jpg&width=960" alt="agriculture" />
+            <h3>Start a new journey with YieldMaster</h3>
+            <p>Effective crop storage is a critical aspect of the YieldMaster platform, designed to enhance agricultural productivity and minimize post-harvest losses. Our platform not only provides accurate crop yield predictions but also offers insights into optimal storage practices. Proper storage techniques are essential to maintain the quality and nutritional value of crops, preventing spoilage and pest infestations. YieldMaster empowers farmers with data-driven recommendations on storage conditions, including temperature and humidity controls,
+                to ensure that harvested crops remain in peak condition until they are ready for market.</p>
+        </div>
+        <div class="right-side">
+            <div class="green">
+                <div class="form-container">
+                    <div class="form-containerr">
+                        <form action="/predict2" method="post">
+                            <div class="form-group">
+                        <label for="district">District:</label>
+                        <select name="District" id="district" class="form-select" required>
+                            <option value="">Select District</option>
+
+                            <option value="Ajmer">Ajmer</option>
+                            <option value="Alwar">Alwar</option>
+                            <option value="Bhilwara">Bhilwara</option>
+                            <option value="Hanumangarh">Hanumangarh</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Jodhpur">Jodhpur</option>
+                            <option value="Kota">Kota</option>
+                            <option value="Nagaur">Nagaur</option>
+                            <option value="Sri Ganganagar">Sri Ganganagar</option>
+                            <option value="Udaipur">Udaipur</option>
+                        </select>
+                    </div>
+                            <div class="form-group">
+                        <label for="crop">Crop:</label>
+                        <select name="Crop" id="crop" class="form-select" required>
+                            <option value="">Select Crop</option>
+
+                            <option value="Garlic">Garlic</option>
+                            <option value="Gram">Gram</option>
+                            <option value="Guava">Guava</option>
+                            <option value="Maize">Maize</option>
+                            <option value="Mango">Mango</option>
+                            <option value="Mustard">Mustard</option>
+                            <option value="Oilseeds">Oilseeds</option>
+                            <option value="Onion">Onion</option>
+                            <option value="Pulses">Pulses</option>
+                            <option value="Sugarcane">Sugarcane</option>
+                            <option value="Tomato">Tomato</option>
+                            <option value="Wheat">Wheat</option>
+                            <option value="Pomegranate">Pomegranate</option>
+                        </select>
+                    </div>
+                            <div class="form-group">
+                        <label for="Market">Market:</label>
+                        <select name="market" id="market" class="form-select" required>
+                            <option value="">Select District</option>
+
+                            <option value="Ajmer APMC Mandi">Ajmer APMC Mandi</option>
+                            <option value="Alwar APMC Mandi">Alwar APMC Mandi</option>
+                            <option value="Bhilwara APMC Mandi">Bhilwara APMC Mandi</option>
+                            <option value="Hanumangarh APMC Mandi">Hanumangarh APMC Mandi</option>
+                            <option value="Bassi Mandi">Bassi Mandi</option>
+                            <option value="Chandpole Mandi">CHandpole Mandi</option>
+                            <option value="Didwana Mandi">Didwana Mandi</option>
+                            <option value="Fatehnagar Mandi">Fatehnagar Mandi</option>
+                            <option value="Jodhpur APMC Mandi">Jodhpur APMC Mandi</option>
+                            <option value="Kisan Mandi">Kisan Mandi</option>
+
+                            <option value="Kisangarh APMC Mandi">Kisangarh APMC Mandi</option>
+                            <option value="Kota APMC Mandi">Kota APMC Mandi</option>
+                            <option value="Kukas Mandi">Kukas Mandi</option>
+                            <option value="Mandal Mandi">MAndal Mandi</option>
+                            <option value="Muhana Mandi">Muhana Mandi</option>
+                            <option value="Nagaur APMC Mandi">Nagaur APMC Mandi</option>
+                            <option value="Padampur Mandi">Padampur Mandi</option>
+                            <option value="Ramganj Mandi">Ramganj Mandi</option>
+                            <option value="Sojati Gate Mandi">Sojati Gate Mandi</option>
+                            <option value="Sri Ganganagar APMC Mandi">Sri Ganganagar APMC Mandi</option>
+                            <option value="Tijara Mandi">Tijara Mandi</option>
+                            <option value="Udaipur APMC Mandi">Udaipur APMC Mandi</option>
+
+                        </select>
+                    </div>
+                            <div class="form-group">
+                                <label for="date">Date (YYYY-MM-DD):</label>
+                                <input type="date" id="date" name="Date">
+                            </div>
+                            <div class="form-group">
+                                <label for="NumberOfDays">Number of Days for Prediction:</label>
+                                <input type="number" id="NumberOfDays" name="NumberOfDays" min="1" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Predict</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="predictions">
+        {% if predictions %}
+        <h2>Predictions for the next {{ num_days }} days:</h2>
+        <ul>
+            {% for prediction in predictions %}
+            <li>Date: {{ prediction.Date }}, Predicted Price: {{ prediction.Predicted_Price }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>Maximum Crop Price:</h2>
+        <p>Date: {{ max_price_date }}, Price: {{ max_price }}</p>
+
+        {% if max_profit_message %}
+        <h2>Max Profit Message:</h2>
+        <p>{{ max_profit_message }}</p>
+        {% endif %}
+        {% endif %}
+    </div>
+
+
+
+        </div><!-- End Quote Form -->
+
+      </div>
+
+    </div>
+  </section><!-- End Get Started Section -->
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+</body>
+
+</html>
